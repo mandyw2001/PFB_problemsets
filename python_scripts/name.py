@@ -10,3 +10,9 @@ print('My name: '+ names ) #added name to print
 print('My favorite color: ', color)
 print('My favorite activity: ', activity)
 print('My favorite animal: ', animal)
+print('\n\n\n')
+print('My name: '+names,'\nMy favorite color: '+color, '\nMy favorite activity: '+activity,
+'\nMy favorite animal: '+ animal )
+
+print('\aAll done!\n\n\n')
+
