@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+x=1
+while x < 101:
+    print (x)
+    x+=1
+print('Done!')
