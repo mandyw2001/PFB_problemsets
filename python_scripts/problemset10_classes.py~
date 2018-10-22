@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+class DNA_seq_org(object):
+    def __init___(self, sequence, gene_name, species_name):
+        self.sequence = sequence
+        self.gene_name = gene_name
+        self.species_name = species_name
+
+dna_BRCA2 = DNA_seq_org('ACTGATCGTTACGTACGAATC', 'BRCA2', 'Homo sapiens')
+
+print('sequence:', dna_BRCA2.sequence)
+print('name:', dna_BRCA2.gene_name)
+print('species', dna_BRCA2.species_name)
