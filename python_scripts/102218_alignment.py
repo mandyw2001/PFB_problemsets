@@ -52,7 +52,7 @@ rc_seq2_user = input('Do you want the reverse complement of sequence 2?')
 alignment_score_3 = 0
 if rc_seq2_user == 'yes':
     for num in range(0,length):
-        if list_seq2[num]==rc_seq2[num]:
+        if list_seq1[num]==rc_seq2[num]:
             alignment_score_3+=1
         else:
             alignment_score_3-=1
