@@ -21,13 +21,13 @@ for entry in SeqIO.parse (filename, 'fastq'):
     right_num = 8  ###right_num will equal to kmer_length when doing sys
     #print(sequences[left_num:right_num])
     
-    for kmer in range(length):
-        for sequence in sequences[kmer]:
-            left_num+=1
-            right_num+=1
-            if right_num <= length:
-                list_of_kmers.append(sequences[left_num:right_num])
-               # print(sequences[left_num:right_num])
+    for pos in range(length):
+        if right_num <= length:
+            list_of_kmers.append(sequences[left_num:right_num])
+            #print(sequences[left_num:right_num])
+        left_num+=1
+        right_num+=1
+            
 
 print('nt per sequence =', len(sequences))
 print('number of lines =', num_line)
